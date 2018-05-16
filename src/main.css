@@ -340,9 +340,6 @@ a:focus {
   text-decoration: underline;
   text-decoration-skip: ink;
 }
-a:focus {
-  outline: 1px dotted #000;
-}
 .button,
 button,
 input[type="button"],

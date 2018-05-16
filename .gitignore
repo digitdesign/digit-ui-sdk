@@ -3,3 +3,4 @@
 .idea
 __MACOSX
 *.log
+.stylelintrc

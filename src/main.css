@@ -325,7 +325,7 @@ ul {
   list-style: disc inside;
 }
 a {
-  color: #29F;
+  color: #FA0;
   cursor: pointer;
   text-decoration: none;
   -webkit-transition: all 65ms ease-in-out;
@@ -334,9 +334,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #F65;
-  text-decoration: underline;
-  text-decoration-skip: ink;
+  color: #FC3;
 }
 .button,
 button,

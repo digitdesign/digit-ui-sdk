@@ -17,7 +17,7 @@
 	display: flex;
 	padding: 0 30px;
 	overflow: hidden;
-	& .toggle {
+	&--toggle {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		display: none;
@@ -25,13 +25,13 @@
 		filter: none;
 		-webkit-tap-highlight-color: transparent;
 	}
-	& .brand {
+	&__brand {
 		max-height: 64px;
 		padding: 14px;
 		vertical-align: middle;
 	}
-	& .left,
-	& .right {
+	&--left,
+	&--right {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -39,7 +39,7 @@
 		-ms-flex: 1;
 		flex: 1;
 	}
-	& .right {
+	&--right {
 		-webkit-box-pack: end;
 		-ms-flex-pack: end;
 		justify-content: flex-end;
@@ -67,14 +67,14 @@ a.link {
 	text-decoration: none;
 	white-space: nowrap;
 	&:hover {
-		border-bottom: 2px solid @gray-100;
+		border-bottom: 2px solid @gray--100;
 		color: @black;
 	}
-	&.active {
-		border-color: @amber-300;
+	&--active {
+		border-color: @amber--300;
 		color: @black;
 		&:hover {
-			border-color: @amber-300;
+			border-color: @amber--300;
 		}
 	}
 }
@@ -123,23 +123,6 @@ section {
 	border-radius: @border-radius;
 	padding: 18px;
 	width: 100%;
-	&:empty, .empty {
-		&::before {
-			content: "\1F44B Oh snap, Are you lost\003F";
-			display: block;
-			font-size: 1.5rem;
-			font-weight: 600;
-			text-align: center;
-			color: @black;
-		}
-		&::after {
-			content: "Keep calm, light a fire, and refresh to try again\2026";
-			display: block;
-			font-size: 1.4rem;
-			position: relative;
-			text-align: center;
-		}
-	}
 }
 
 // Divider
@@ -167,7 +150,7 @@ section {
 		background-color: transparent;
 		display: block;
 		height: 1px;
-		border-top: 1px solid @gray-100;
+		border-top: 1px solid @gray--100;
 		position: absolute;
 		top: 50%;
 		z-index: 1;
@@ -185,8 +168,8 @@ section {
 .input-addon {
 	height: auto;
 	padding: 10px 18px;
-	background: @gray-50;
-	border: 1px solid @gray-100;
+	background: @gray--50;
+	border: 1px solid @gray--100;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

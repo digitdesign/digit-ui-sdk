@@ -270,116 +270,92 @@
 
 // Contextual background colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.bg-light {
-	background-color: @gray-50;
-}
-
-.bg-muted {
-	background-color: @gray-200;
-}
-
-.bg-primary {
-	background-color: @amber-300;
-}
-
-.bg-success {
-	background-color: @green-300;
-}
-
-.bg-info {
-	background-color: @blue-300;
-}
-
-.bg-warning {
-	background-color: @amber;
-}
-
-.bg-danger {
-	background-color: @red-300;
-}
-
-.bg-inverse {
-	background-color: @black;
-}
-
-.bg-white {
-	background-color: @white;
+.bg {
+	&--light {
+	background-color: @gray--50;
+	}
+	&--muted {
+		background-color: @gray--200;
+	}
+	&--primary {
+		background-color: @amber--300;
+	}
+	&-success {
+		background-color: @green--300;
+	}
+	&--info {
+		background-color: @blue--300;
+	}
+	&--warning {
+		background-color: @amber;
+	}
+	&--danger {
+		background-color: @red--300;
+	}
+	&--inverse {
+		background-color: @black;
+	}
+	&--white {
+		background-color: @white;
+	}
 }
 
 // Contextual text colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.text-muted {
-	color: @gray-200;
-}
-
-.text-primary {
-	color: @amber-300;
-}
-
-.text-success {
-	color: @green-300;
-}
-
-.text-info {
-	color: @blue-300;
-}
-
-.text-warning {
-	color: @amber;
-}
-
-.text-danger {
-	color: @red;
-}
-
-.text-white {
-	color: @white;
-}
-
-.text-black {
-	color: @black;
-}
-
-.text-gray {
-	color: @gray;
-}
-
-.text-link {
-	color: @blue-300;
-}
-
-// Contextual text styles
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.broken-link {
-	color: @gray-300;
-	pointer-events: none;
-	text-decoration: line-through;
+.text {
+	&--muted {
+		color: @gray--200;
+	}
+	&--primary {
+		color: @amber--300;
+	}
+	&--success {
+		color: @green--300;
+	}
+	&--info {
+		color: @blue--300;
+	}
+	&--warning {
+		color: @amber;
+	}
+	&--danger {
+		color: @red;
+	}
+	&--white {
+		color: @white;
+	}
+	&--black {
+		color: @black;
+	}
+	&--gray {
+		color: @gray;
+	}
+	&--link {
+		color: @blue--300;
+	}
 }
 
 // Contextual border colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.border-muted {
-	color: @gray-300;
-}
-
-.border-primary {
-	color: @amber-300;
-}
-
-.border-success {
-	color: @green;
-}
-
-.border-info {
-	color: @blue-300;
-}
-
-.border-warning {
-	color: @amber;
-}
-
-.border-danger {
-	color: @red;
+.border {
+	&--muted {
+	color: @gray--300;
+	}
+	&--primary {
+		color: @amber--300;
+	}
+	&--success {
+		color: @green;
+	}
+	&--info {
+		color: @blue--300;
+	}
+	&--warning {
+		color: @amber;
+	}
+	&--danger {
+		color: @red;
+	}
 }
 
 // Border Radius
@@ -410,12 +386,13 @@
 
 // Quick floats
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.pull-left {
+.pull {
+	&--left {
 	float: left !important;
-}
-
-.pull-right {
-	float: right !important;
+	}
+	&--right {
+		float: right !important;
+	}
 }
 
 // Text Selection
@@ -426,9 +403,9 @@
 }
 
 ::-moz-selection {
-	background: @amber-100;
+	background: @amber--100;
 }
 
 ::selection {
-	background: @amber-100;
+	background: @amber--100;
 }

@@ -5,110 +5,112 @@
 
 // Padding & Margin
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.margin-none {
-	margin: 0;
+.margin {
+	&--none {
+		margin: 0;
+	}
+	&--less {
+		margin: 24px;
+	}
+	&--medium {
+		margin: 32px;
+	}
+	&--more {
+		margin: 48px;
+	}
 }
 
-.padding-none {
+.padding {
+	&--none {
 	padding: 0;
-}
-
-.padding-less {
-	padding: 24px;
-}
-
-.padding-medium {
-	padding: 32px;
-}
-
-.padding-more {
-	padding: 48px;
+	}
+	&--less {
+		padding: 24px;
+	}
+	&--medium {
+		padding: 32px;
+	}
+	&--more {
+		padding: 48px;
+	}
 }
 
 // Height & Width
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .width-25 {
-	width: 25%;
-}
-
-.width-50 {
-	width: 50%;
-}
-
-.width-75 {
-	width: 75%;
-}
-
-.width-100 {
-	width: 100%;
+	&--25 {
+		width: 25%;
+	}
+	&--50 {
+		width: 50%;
+	}
+	&--75 {
+		width: 75%;
+	}
+	&--100 {
+		width: 100%;
+	}
 }
 
 .height-25 {
-	height: 25%;
-}
-
-.height-50 {
-	height: 50%;
-}
-
-.height-75 {
-	height: 75%;
-}
-
-.height-100 {
-	height: 100%;
+	&--25 {
+		height: 25%;
+	}
+	&--50 {
+		height: 50%;
+	}
+	&--75 {
+		height: 75%;
+	}
+	&--100 {
+		height: 100%;
+	}
 }
 
 // Text Transform
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.text-uppercase {
-	text-transform: uppercase;
-}
-
-.text-lowercase {
-	text-transform: lowercase;
-}
-
-.text-capitalize {
-	text-transform: capitalize;
+.text-transform {
+	&--uppercase {
+		text-transform: uppercase;
+	}
+	&--lowercase {
+		text-transform: lowercase;
+	}
+	&--capitalize {
+		text-transform: capitalize;
+	}
 }
 
 // Font Weights
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.font-weight-100 {
-	font-weight: 100;
-}
-
-.font-weight-200 {
-	font-weight: 200;
-}
-
-.font-weight-300 {
-	font-weight: 300;
-}
-
-.font-weight-400 {
-	font-weight: 400;
-}
-
-.font-weight-500 {
-	font-weight: 500;
-}
-
-.font-weight-600 {
-	font-weight: 600;
-}
-
-.font-weight-700 {
-	font-weight: 700;
-}
-
-.font-weight-800 {
-	font-weight: 800;
-}
-
-.font-weight-900 {
-	font-weight: 900;
+.font-weight {
+	&--100 {
+		font-weight: 100;
+	}
+	&--200 {
+		font-weight: 200;
+	}
+	&--300 {
+		font-weight: 300;
+	}
+	&--400 {
+		font-weight: 400;
+	}
+	&--500 {
+		font-weight: 500;
+	}
+	&--600 {
+		font-weight: 600;
+	}
+	&--700 {
+		font-weight: 700;
+	}
+	&--800 {
+		font-weight: 800;
+	}
+	&--900 {
+		font-weight: 900;
+	}
 }
 
 // Font Sizes
@@ -150,20 +152,19 @@
 .material-icons {
 	padding: 0 4px;
 	vertical-align: middle;
-	&.md-18 {
-		font-size: 1.8rem;
-	}
-
-	&.md-24 {
-		font-size: 2.4rem;
-	}
-
-	&.md-36 {
-		font-size: 3.6rem;
-	}
-
-	&.md-48 {
-		font-size: 4.8rem;
+	&.md {
+		&--18 {
+			font-size: 1.8rem;
+		}
+		&--24 {
+			font-size: 2.4rem;
+		}
+		&--36 {
+			font-size: 3.6rem;
+		}
+		&--48 {
+			font-size: 4.8rem;
+		}
 	}
 
 	&.md-dark {
@@ -201,49 +202,47 @@
 	flex-direction: column;
 	height: 100%;
 	position: relative;
-}
-
-.align-left {
-	text-align: left;
-}
-
-.align-right {
-	text-align: right;
-}
-
-.align-center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	&--left {
+		text-align: left;
+		justify-content: left;
+	}
+	&--right {
+		text-align: right;
+		justify-content: right;
+	}
+	&--center {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
 }
 
 // Positions
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.position-absolute {
-	position: absolute;
-}
-
-.position-fixed {
-	position: fixed;
-}
-
-.position-fixed-top {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1;
-}
-
-.position-fixed-bottom {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 1;
+.position {
+	&---absolute {
+		position: absolute;
+	}
+	&__fixed {
+		position: fixed;
+		&--top {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1;
+		}
+		&--bottom {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
 }
 
 // Show/hide content
@@ -260,17 +259,9 @@
 	visibility: hidden;
 }
 
-.text-hidden {
-	background-color: transparent;
-	border: 0;
-	color: transparent;
-	font: 0/0 a;
-	text-shadow: none;
-}
-
 // Contextual background colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.bg {
+.background-color {
 	&--light {
 	background-color: @gray--50;
 	}
@@ -302,7 +293,7 @@
 
 // Contextual text colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.text {
+.text-color {
 	&--muted {
 		color: @gray--200;
 	}
@@ -337,7 +328,7 @@
 
 // Contextual border colors
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.border {
+.border-color {
 	&--muted {
 	color: @gray--300;
 	}

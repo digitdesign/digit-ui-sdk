@@ -97,7 +97,7 @@ h6,
 }
 blockquote {
   border-left: 1px solid #DDD;
-  color: #666;
+  color: #444;
   font-style: italic;
   margin: auto 0;
   padding: 10px 16px;
@@ -728,7 +728,7 @@ a.link {
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 2px solid transparent;
-  color: #666;
+  color: #444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -792,7 +792,7 @@ section:first-child {
 }
 .divider h5 {
   background-color: #FFF;
-  color: #666;
+  color: #444;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 400;
@@ -1136,7 +1136,7 @@ section:first-child {
   color: #000;
 }
 .text-color--gray {
-  color: #666;
+  color: #444;
 }
 .text-color--link {
   color: #29F;

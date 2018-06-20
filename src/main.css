@@ -624,20 +624,6 @@ table,
 ul {
   margin-bottom: 16px;
 }
-a,
-button,
-input [type],
-textarea,
-select,
-video,
-img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: translateZ(0);
-  transform: translate(0);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
 table {
   border-collapse: collapse;
   border-spacing: 0;

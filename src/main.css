@@ -328,43 +328,6 @@ input[type="submit"] {
   transition: all 65ms ease-in-out;
   -webkit-tap-highlight-color: transparent;
 }
-.button:hover,
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-.button:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-  color: initial;
-  cursor: pointer;
-  -webkit-filter: brightness(95%);
-  filter: brightness(95%);
-  outline: none;
-  text-decoration: none;
-}
-.button:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
-  box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
-}
-.button:active,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
-  -webkit-filter: brightness(92%);
-  filter: brightness(92%);
-  -webkit-transition: 0s;
-  transition: 0s;
-}
 .button--loading,
 button--loading,
 input[type="button"]--loading,
@@ -373,6 +336,26 @@ input[type="submit"]--loading {
   background: #FB0 url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22xMidYMid%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20fill%3D%22none%22%20ng-attr-stroke%3D%22%7B%7Bconfig.color%7D%7D%22%20ng-attr-stroke-width%3D%22%7B%7Bconfig.width%7D%7D%22%20ng-attr-r%3D%22%7B%7Bconfig.radius%7D%7D%22%20ng-attr-stroke-dasharray%3D%22%7B%7Bconfig.dasharray%7D%7D%22%20stroke%3D%22%23222%22%20stroke-width%3D%225%22%20r%3D%2220%22%20stroke-dasharray%3D%2294%2050%22%20transform%3D%22rotate(54%2050%2050)%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20calcMode%3D%22linear%22%20values%3D%220%2050%2050%3B360%2050%2050%22%20keyTimes%3D%220%3B1%22%20dur%3D%22600ms%22%20begin%3D%220s%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%3C%2Fcircle%3E%3C%2Fsvg%3E") no-repeat center / 40px;
   color: transparent !important;
   pointer-events: none;
+}
+.button[disabled],
+button[disabled],
+input[type="button"][disabled],
+input[type="reset"][disabled],
+input[type="submit"][disabled] {
+  background: #F5F5F5;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #999;
+}
+.button[disabled]:hover,
+button[disabled]:hover,
+input[type="button"][disabled]:hover,
+input[type="reset"][disabled]:hover,
+input[type="submit"][disabled]:hover {
+  cursor: not-allowed;
+  -webkit-filter: none;
+  filter: none;
 }
 .button__secondary,
 button__secondary,
@@ -427,25 +410,42 @@ input[type="submit"]__secondary--loading {
   color: transparent !important;
   pointer-events: none;
 }
-.button[disabled],
-button[disabled],
-input[type="button"][disabled],
-input[type="reset"][disabled],
-input[type="submit"][disabled] {
-  background: #F5F5F5;
-  border-color: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  color: #999;
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  color: initial;
+  cursor: pointer;
+  -webkit-filter: brightness(95%);
+  filter: brightness(95%);
+  outline: none;
+  text-decoration: none;
 }
-.button[disabled]:hover,
-button[disabled]:hover,
-input[type="button"][disabled]:hover,
-input[type="reset"][disabled]:hover,
-input[type="submit"][disabled]:hover {
-  cursor: not-allowed;
-  -webkit-filter: none;
-  filter: none;
+.button:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+  box-shadow: 0 0 0 3px rgba(255, 187, 0, 0.3);
+}
+.button:active,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-filter: brightness(92%);
+  filter: brightness(92%);
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 input[type]:not([type="submit"]):not([type="reset"]):not([type="button"]):not([type="hidden"]):not([type="radio"]):not([type="checkbox"]),
 textarea,
